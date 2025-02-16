@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="alerts"></div>
+    <h1>Trading Algorithm</h1>
+
+    <div>
+        <label for="alphaVantageAPI">Alpha Vantage API Key:</label>
+        <input type="text" id="alphaVantageAPI" placeholder="Enter Alpha Vantage API Key">
+    </div>
+
+    <div>
+        <label for="finnhubAPI">Finnhub API Key:</label>
+        <input type="text" id="finnhubAPI" placeholder="Enter Finnhub API Key">
+    </div>
+
+    <button onclick="submitAPI()">Submit</button>
+
+    <h2 id="lastUpdated"></h2>
+
+    <h3>MAG 7 Stocks (S&P 500) - API Data</h3>
+    <table id="apiData">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Open Price</th>
+                <th>Previous Close</th>
+                <th>Current Price</th>
+                <th>SPY Weightage (%)</th>
+                <th>RSI</th>
+                <th>EMA 20</th>
+                <th>EMA 50</th>
+                <th>Last Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <h3>Views: <span id="viewCount">0</span></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
